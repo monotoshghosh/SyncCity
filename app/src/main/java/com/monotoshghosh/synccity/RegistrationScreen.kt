@@ -1,6 +1,5 @@
 package com.monotoshghosh.synccity
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
@@ -10,18 +9,18 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
-import com.monotoshghosh.synccity.databinding.ActivityMainBinding
+import com.monotoshghosh.synccity.databinding.ActivityRegistrationScreenBinding
 
-class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+class RegistrationScreen : AppCompatActivity() {
+    private lateinit var binding: ActivityRegistrationScreenBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding=ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityRegistrationScreenBinding.inflate(layoutInflater)
 //        enableEdgeToEdge()
         setContentView(binding.root)
 
         window.apply {
-            statusBarColor = ContextCompat.getColor(this@MainActivity,android.R.color.white)
+            statusBarColor = ContextCompat.getColor(this@RegistrationScreen,android.R.color.white)
             decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
         }
 
@@ -33,17 +32,7 @@ class MainActivity : AppCompatActivity() {
 //            insets
 //        }
 
-        binding.registerBtn.setOnClickListener {
-            intent = Intent(this,RegistrationScreen::class.java)
-            startActivity(intent)
-        }
-
-
-
-
-
     }
-
 
 
 
