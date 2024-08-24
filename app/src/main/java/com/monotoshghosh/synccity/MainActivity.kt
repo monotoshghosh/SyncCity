@@ -33,8 +33,21 @@ class MainActivity : AppCompatActivity() {
 //            insets
 //        }
 
+        // REGISTRATION BTN
         binding.registerBtn.setOnClickListener {
             intent = Intent(this,RegistrationScreen::class.java)
+            startActivity(intent)
+        }
+
+        // LOGIN BTN
+        binding.loginBtn.setOnClickListener {
+            intent = Intent(this,LoginScreen::class.java)
+            startActivity(intent)
+        }
+
+        // COMPLAINT BOX BTN
+        binding.complainBoxBtn.setOnClickListener {
+            intent = Intent(this,ComplaintBoxScreen::class.java)
             startActivity(intent)
         }
 
