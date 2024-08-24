@@ -12,7 +12,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="35dp"
         android:layout_marginBottom="1dp"
         android:text="REGISTRATION"
         android:textColor="#5171C3"
@@ -53,6 +53,7 @@
                 app:hintTextColor="#024E80">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/deptReg"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:drawablePadding="10dp"
@@ -80,6 +81,7 @@
                 app:hintTextColor="#024E80">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/villTownReg"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:drawablePadding="10dp"
@@ -107,6 +109,7 @@
                 app:hintTextColor="#024E80">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/blockReg"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:drawablePadding="10dp"
@@ -134,6 +137,7 @@
                 app:hintTextColor="#024E80">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/distReg"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:drawablePadding="10dp"
@@ -161,6 +165,7 @@
                 app:hintTextColor="#024E80">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pinCodeReg"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:drawablePadding="10dp"
@@ -188,6 +193,7 @@
                 app:hintTextColor="#024E80">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/stateReg"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:drawablePadding="10dp"
@@ -215,6 +221,7 @@
                 app:hintTextColor="#024E80">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phoneNoReg"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:drawablePadding="10dp"
@@ -242,6 +249,7 @@
                 app:hintTextColor="#024E80">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailIDReg"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:drawablePadding="10dp"
@@ -273,6 +281,7 @@
                 android:gravity="start">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordReg"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:drawablePadding="10dp"
