@@ -1,6 +1,5 @@
 package com.monotoshghosh.synccity
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
@@ -8,18 +7,19 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.monotoshghosh.synccity.databinding.ActivitySpecificDeptScreenBinding
+import com.monotoshghosh.synccity.databinding.ActivityComplaintBoxScreenBinding
+import com.monotoshghosh.synccity.databinding.ActivityComplaintsReceivedBinding
 
-class SpecificDeptScreen : AppCompatActivity() {
-    private lateinit var binding : ActivitySpecificDeptScreenBinding
+class ComplaintsReceived : AppCompatActivity() {
+    private lateinit var binding: ActivityComplaintsReceivedBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivitySpecificDeptScreenBinding.inflate(layoutInflater)
+        binding = ActivityComplaintsReceivedBinding.inflate(layoutInflater)
 //        enableEdgeToEdge()
         setContentView(binding.root)
 
         window.apply {
-            statusBarColor = ContextCompat.getColor(this@SpecificDeptScreen,android.R.color.white)
+            statusBarColor = ContextCompat.getColor(this@ComplaintsReceived,android.R.color.white)
             decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
         }
 
@@ -28,13 +28,5 @@ class SpecificDeptScreen : AppCompatActivity() {
 //            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
 //            insets
 //        }
-        binding.compReceivedSpecDept.setOnClickListener {
-            intent = Intent(this,ComplaintsReceived::class.java)
-            startActivity(intent)
-        }
-
-
-
-
     }
 }
