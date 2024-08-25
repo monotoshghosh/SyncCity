@@ -5,18 +5,18 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ComplaintBoxScreen"
-    android:background="@color/white">
+    android:background="@color/white"
+    tools:context=".ComplaintBoxScreen">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
         android:text="COMPLAINT BOX"
         android:textColor="#DA2C1F"
         android:textSize="40dp"
         android:textStyle="bold"
-        android:layout_marginTop="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
@@ -160,6 +160,35 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/adddept" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="9dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.785">
+
+        <Button
+            android:id="@+id/submitBtnCompBox"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/c2"
+            android:gravity="center"
+            android:text="Submit"
+            android:textColor="#FAF6F6"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:backgroundTint="@null" />
 
     </androidx.cardview.widget.CardView>
 
