@@ -9,7 +9,7 @@
     tools:context=".ComplaintsReceived">
 
     <TextView
-        android:id="@+id/PrevProTextViewDeptScr"
+        android:id="@+id/textViewComplaintRevceived"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -18,7 +18,7 @@
         android:textColor="#DA2C1F"
         android:textSize="45dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/scrollViewSpecDept"
+        app:layout_constraintBottom_toTopOf="@+id/scrollViewComplaintsRevceived"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,11 +36,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollViewSpecDept"
+        app:layout_constraintTop_toBottomOf="@+id/scrollViewComplaintsRevceived"
         app:layout_constraintVertical_bias="0.194">
 
         <Button
-            android:id="@+id/contOtherDeptSpecDept"
+            android:id="@+id/solvedBtnComplaintsRevceived"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
@@ -55,7 +55,7 @@
     </androidx.cardview.widget.CardView>
 
     <ScrollView
-        android:id="@+id/scrollViewSpecDept"
+        android:id="@+id/scrollViewComplaintsRevceived"
         android:layout_width="0dp"
         android:layout_height="500dp"
         android:layout_marginBottom="77dp"

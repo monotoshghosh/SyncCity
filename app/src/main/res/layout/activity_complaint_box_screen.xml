@@ -9,7 +9,7 @@
     tools:context=".ComplaintBoxScreen">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewComplaintBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
@@ -26,7 +26,7 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
+        android:id="@+id/nameComplaintBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -42,7 +42,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/textViewComplaintBox">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/nameCompBox"
@@ -75,10 +75,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+        app:layout_constraintTop_toBottomOf="@+id/nameComplaintBox">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/compCompBox"
+            android:id="@+id/compComplaintBox"
             android:layout_width="300dp"
             android:layout_height="145dp"
             android:drawablePadding="10dp"
@@ -95,7 +95,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/PrevProTextViewDeptScr"
+        android:id="@+id/PrevProtextViewComplaintBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
@@ -126,7 +126,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.303"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textViewComplaintBox"
         app:layout_constraintVertical_bias="0.613">
 
         <com.google.android.material.textfield.TextInputEditText

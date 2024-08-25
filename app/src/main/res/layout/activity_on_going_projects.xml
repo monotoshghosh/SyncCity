@@ -6,33 +6,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".PreviousProjects">
+    tools:context=".OnGoingProjects">
 
     <TextView
-        android:id="@+id/textViewPrevProject"
+        android:id="@+id/textViewOnGoingProjects"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="1dp"
-        android:text="PREVIOUS PROJECTS"
+        android:text="ONGOING PROJECTS"
         android:gravity="center"
         android:textColor="#5171C3"
         android:textSize="45dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/scrollViewPrevProject"
+        app:layout_constraintBottom_toTopOf="@+id/scrollViewOnGoingProjects"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
-        android:id="@+id/scrollViewPrevProject"
+        android:id="@+id/scrollViewOnGoingProjects"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewPrevProject">
+        app:layout_constraintTop_toBottomOf="@+id/textViewOnGoingProjects">
 
         <LinearLayout
             android:layout_width="match_parent"
