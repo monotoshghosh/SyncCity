@@ -33,6 +33,16 @@ class SpecificDeptScreen : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.newProjectsSpecDept.setOnClickListener {
+            intent = Intent(this,NewProjects::class.java)
+            startActivity(intent)
+        }
+
+        binding.preProjectsSpecDept.setOnClickListener {
+            intent = Intent(this,PreviousProjects::class.java)
+            startActivity(intent)
+        }
+
 
 
 

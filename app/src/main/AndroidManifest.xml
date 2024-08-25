@@ -13,6 +13,12 @@
         android:theme="@style/Theme.SyncCity"
         tools:targetApi="31">
         <activity
+            android:name=".PreviousProjects"
+            android:exported="false" />
+        <activity
+            android:name=".NewProjects"
+            android:exported="false" />
+        <activity
             android:name=".ComplaintsReceived"
             android:exported="false" />
         <activity

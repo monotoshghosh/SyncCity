@@ -9,7 +9,7 @@
     tools:context=".ComplaintsReceived">
 
     <TextView
-        android:id="@+id/DeptTextViewDeptScr"
+        android:id="@+id/newProTextViewDeptScr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -161,7 +161,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Ipsit Swraoop Bose"
+                        android:text="Ipsit Swaroop Bose"
                         android:textColor="@color/white"
                         android:textStyle="bold" />
 
