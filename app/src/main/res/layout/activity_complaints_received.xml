@@ -161,7 +161,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Monotosh Ghosh"
+                        android:text="Ipsit Swraoop Bose"
                         android:textColor="@color/white"
                         android:textStyle="bold" />
 
@@ -169,7 +169,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:text="Road damaged by heavy truck traffic, with rainwater accumulation leading to various diseases..."
+                        android:text="An electric pole has fallen due to the recent storm, causing power outages and safety hazards in..."
                         android:textColor="@color/white"
                         android:textStyle="italic" />
 
@@ -196,7 +196,72 @@
                             android:background="#A5B2E3"
                             android:paddingLeft="3dp"
                             android:paddingRight="3dp"
-                            android:text="# Road Department"
+                            android:text="# ElectricityDepartment"
+                            android:textColor="#FFE500" />
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/c2"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="325dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Souvk Banerjee"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="A significant water pipe leakage is causing extensive water wastage and flooding in the area..."
+                        android:textColor="@color/white"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginEnd="7dp"
+                            android:background="#A5B2E3"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:text="# BDO"
+                            android:textColor="#FFE500" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginEnd="7dp"
+                            android:background="#A5B2E3"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:text="# WaterDepartment"
                             android:textColor="#FFE500" />
 
                         <TextView
@@ -234,7 +299,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Monotosh Ghosh"
+                        android:text="Sourav Ganguly"
                         android:textColor="@color/white"
                         android:textStyle="bold" />
 
@@ -242,7 +307,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:text="Road damaged by heavy truck traffic, with rainwater accumulation leading to various diseases..."
+                        android:text="Road damage due to trucks, leaking water pipes causing flooding, and unreliable electricity... "
                         android:textColor="@color/white"
                         android:textStyle="italic" />
 
@@ -269,7 +334,7 @@
                             android:background="#A5B2E3"
                             android:paddingLeft="3dp"
                             android:paddingRight="3dp"
-                            android:text="# Road Department"
+                            android:text="# ElectricityDepartment"
                             android:textColor="#FFE500" />
 
                         <TextView
@@ -307,80 +372,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Monotosh Ghosh"
-                        android:textColor="@color/white"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp"
-                        android:text="Road damaged by heavy truck traffic, with rainwater accumulation leading to various diseases..."
-                        android:textColor="@color/white"
-                        android:textStyle="italic" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="21dp"
-                            android:layout_marginEnd="7dp"
-                            android:background="#A5B2E3"
-                            android:paddingLeft="3dp"
-                            android:paddingRight="3dp"
-                            android:text="# BDO"
-                            android:textColor="#FFE500" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="21dp"
-                            android:layout_marginEnd="7dp"
-                            android:background="#A5B2E3"
-                            android:paddingLeft="3dp"
-                            android:paddingRight="3dp"
-                            android:text="# Road Department"
-                            android:textColor="#FFE500" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="21dp"
-                            android:layout_marginEnd="7dp"
-                            android:background="#A5B2E3"
-                            android:paddingLeft="3dp"
-                            android:paddingRight="3dp"
-                            android:text="# PWD"
-                            android:textColor="#FFE500" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="25dp"
-                android:backgroundTint="@color/c2"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="10dp">
-
-
-                <LinearLayout
-                    android:layout_width="325dp"
-                    android:layout_height="100dp"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Monotosh Ghosh"
+                        android:text="Sachin Tendulkar"
                         android:textColor="@color/white"
                         android:textStyle="bold" />
 
@@ -455,7 +447,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Monotosh Ghosh"
+                        android:text="MS Dhoni"
                         android:textColor="@color/white"
                         android:textStyle="bold" />
 
