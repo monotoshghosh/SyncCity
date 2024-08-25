@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SpecificDeptScreen">
+
+    <TextView
+        android:id="@+id/DeptTextViewDeptScr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="1dp"
+        android:text="DEPARTMENT"
+        android:textColor="#5171C3"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollViewSpecDept"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/requests"
+        app:layout_constraintBottom_toTopOf="@+id/scrollViewSpecDept"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DeptTextViewDeptScr"
+        app:layout_constraintVertical_bias="0.741" />
+
+    <ScrollView
+        android:id="@+id/scrollViewSpecDept"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DeptTextViewDeptScr">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="10dp">
+
+                <Button
+                    android:id="@+id/compReceivedSpecDept"
+                    android:layout_width="300dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/c2"
+                    android:gravity="center"
+                    android:text="Complaints Received"
+                    android:textColor="#FAF6F6"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="10dp">
+
+                <Button
+                    android:id="@+id/newProjectsSpecDept"
+                    android:layout_width="300dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/c2"
+                    android:gravity="center"
+                    android:text="New Projects"
+                    android:textColor="#FAF6F6"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="10dp">
+
+                <Button
+                    android:id="@+id/preProjectsSpecDept"
+                    android:layout_width="300dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/c2"
+                    android:gravity="center"
+                    android:text="Previous Projects"
+                    android:textColor="#FAF6F6"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="10dp">
+
+                <Button
+                    android:id="@+id/onGoingProjectsSpecDept"
+                    android:layout_width="300dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/c2"
+                    android:gravity="center"
+                    android:text="Ongoing Projects"
+                    android:textColor="#FAF6F6"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="10dp">
+
+                <Button
+                    android:id="@+id/contOtherDeptSpecDept"
+                    android:layout_width="300dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/c2"
+                    android:gravity="center"
+                    android:text="Contact Other Dept"
+                    android:textColor="#FAF6F6"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

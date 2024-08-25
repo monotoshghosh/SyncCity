@@ -1,6 +1,5 @@
 package com.monotoshghosh.synccity
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
@@ -8,18 +7,18 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.monotoshghosh.synccity.databinding.ActivityLoginScreenBinding
+import com.monotoshghosh.synccity.databinding.ActivitySpecificDeptScreenBinding
 
-class LoginScreen : AppCompatActivity() {
-    private lateinit var binding: ActivityLoginScreenBinding
+class SpecificDeptScreen : AppCompatActivity() {
+    private lateinit var binding : ActivitySpecificDeptScreenBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLoginScreenBinding.inflate(layoutInflater)
+        binding = ActivitySpecificDeptScreenBinding.inflate(layoutInflater)
 //        enableEdgeToEdge()
         setContentView(binding.root)
 
         window.apply {
-            statusBarColor = ContextCompat.getColor(this@LoginScreen,android.R.color.white)
+            statusBarColor = ContextCompat.getColor(this@SpecificDeptScreen,android.R.color.white)
             decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
         }
 
@@ -28,13 +27,6 @@ class LoginScreen : AppCompatActivity() {
 //            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
 //            insets
 //        }
-
-        binding.loginBtn.setOnClickListener {
-            intent = Intent(this,SpecificDeptScreen::class.java)
-            startActivity(intent)
-        }
-
-
 
     }
 }
