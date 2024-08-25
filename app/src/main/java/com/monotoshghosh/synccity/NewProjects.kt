@@ -1,5 +1,6 @@
 package com.monotoshghosh.synccity
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
@@ -28,5 +29,10 @@ class NewProjects : AppCompatActivity() {
 //            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
 //            insets
 //        }
+
+        binding.nextBtnNewProject.setOnClickListener {
+            intent = Intent(this,NewProjectScr2::class.java)
+            startActivity(intent)
+        }
     }
 }

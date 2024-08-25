@@ -224,7 +224,7 @@ tools:context=".NewProjects">
             android:layout_marginBottom="10dp">
 
             <Button
-                android:id="@+id/submitBtnNewProject"
+                android:id="@+id/nextBtnNewProject"
                 android:layout_width="130dp"
                 android:layout_height="45dp"
                 android:layout_gravity="center_horizontal"
