@@ -72,7 +72,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="City :              Bhubaneswar"
+                        android:text="Place :           Bhubaneswar"
                         android:textColor="@color/white"
                         android:textStyle="bold" />
 
@@ -120,7 +120,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="City :              Cuttack"
+                        android:text="Place :           Cuttack"
                         android:textColor="@color/white"
                         android:textStyle="bold" />
 
@@ -168,7 +168,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="City :              Puri"
+                        android:text="Place :           Puri"
                         android:textColor="@color/white"
                         android:textStyle="bold" />
 
@@ -217,7 +217,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="City :              Balasore"
+                        android:text="Place :           Balasore"
                         android:textColor="@color/white"
                         android:textStyle="bold" />
 
@@ -266,7 +266,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="City :              Rourkela"
+                        android:text="Place :           Rourkela"
                         android:textColor="@color/white"
                         android:textStyle="bold" />
 
@@ -315,7 +315,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="City :              Angul"
+                        android:text="Place :           Angul"
                         android:textColor="@color/white"
                         android:textStyle="bold" />
 
@@ -363,7 +363,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="City :              Khordha"
+                        android:text="Place :           Khordha"
                         android:textColor="@color/white"
                         android:textStyle="bold" />
 
@@ -412,7 +412,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="City :              Bhadrak"
+                        android:text="Place :           Bhadrak"
                         android:textColor="@color/white"
                         android:textStyle="bold" />
 
@@ -461,7 +461,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="City :              Paradeep"
+                        android:text="Place :           Paradeep"
                         android:textColor="@color/white"
                         android:textStyle="bold" />
 
@@ -510,7 +510,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="City :              Konark"
+                        android:text="Place :           Konark"
                         android:textColor="@color/white"
                         android:textStyle="bold" />
 

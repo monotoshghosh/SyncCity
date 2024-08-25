@@ -48,6 +48,11 @@ class SpecificDeptScreen : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.requestDepartment.setOnClickListener {
+            intent = Intent(this,Requests::class.java)
+            startActivity(intent)
+        }
+
 
 
 
