@@ -48,8 +48,8 @@ class MainActivity : AppCompatActivity() {
 
         // COMPLAINT BOX BTN
         binding.complainBoxBtn.setOnClickListener {
-//            intent = Intent(this,ComplaintBoxScreen::class.java)
-//            startActivity(intent)
+            intent = Intent(this,ComplaintBoxScreen::class.java)
+            startActivity(intent)
             Toast.makeText(this, "I'm Still Woriking...", Toast.LENGTH_SHORT).show()
         }
 
