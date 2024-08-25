@@ -32,7 +32,7 @@ class RegistrationScreen : AppCompatActivity() {
 //            insets
 //        }
 
-        binding.loginBtn.setOnClickListener {
+        binding.signupBtnRegistration.setOnClickListener {
 
         }
 

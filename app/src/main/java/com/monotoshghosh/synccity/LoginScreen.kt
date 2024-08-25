@@ -29,7 +29,7 @@ class LoginScreen : AppCompatActivity() {
 //            insets
 //        }
 
-        binding.loginBtn.setOnClickListener {
+        binding.loginBtnLoginScreen.setOnClickListener {
             intent = Intent(this,SpecificDeptScreen::class.java)
             startActivity(intent)
         }
