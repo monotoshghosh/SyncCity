@@ -61,6 +61,10 @@ class SpecificDeptScreen : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        binding.contOtherDeptSpecDept.setOnClickListener {
+            intent = Intent(this,ContactOtherDept::class.java)
+            startActivity(intent)
+        }
 
 
 
