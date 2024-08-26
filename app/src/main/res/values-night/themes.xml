@@ -4,10 +4,13 @@
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
 
-        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!--    TO REMOVE THE DEFAULT PLACE HOLDER UI   -->
+    <style name="Theme.Transparent" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
-
     </style>
+
 </resources>

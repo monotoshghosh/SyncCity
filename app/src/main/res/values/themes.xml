@@ -5,11 +5,12 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.SyncCity" parent="Base.Theme.SyncCity" >
-        <item name="android:windowBackground">@android:color/transparent</item>
+    <!--    TO REMOVE THE DEFAULT PLACE HOLDER UI   -->
+    <style name="Theme.Transparent" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
-
     </style>
+
+    <style name="Theme.SyncCity" parent="Base.Theme.SyncCity" />
 </resources>
