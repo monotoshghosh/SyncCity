@@ -1,6 +1,5 @@
 package com.monotoshghosh.synccity
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
@@ -8,18 +7,18 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.monotoshghosh.synccity.databinding.ActivityRequestsBinding
+import com.monotoshghosh.synccity.databinding.ActivityRequestApprovalBinding
 
-class Requests : AppCompatActivity() {
-    private lateinit var binding:ActivityRequestsBinding
+class RequestApproval : AppCompatActivity() {
+    private lateinit var binding:ActivityRequestApprovalBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityRequestsBinding.inflate(layoutInflater)
+        binding = ActivityRequestApprovalBinding.inflate(layoutInflater)
 //        enableEdgeToEdge()
         setContentView(binding.root)
 
         window.apply {
-            statusBarColor = ContextCompat.getColor(this@Requests,android.R.color.white)
+            statusBarColor = ContextCompat.getColor(this@RequestApproval,android.R.color.white)
             decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
         }
 
@@ -28,12 +27,5 @@ class Requests : AppCompatActivity() {
 //            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
 //            insets
 //        }
-
-        binding.request1Request.setOnClickListener {
-            intent = Intent(this,RequestApproval::class.java)
-            startActivity(intent)
-        }
-
-
     }
 }
