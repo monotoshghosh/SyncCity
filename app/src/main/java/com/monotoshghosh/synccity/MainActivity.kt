@@ -1,67 +1,52 @@
 package com.monotoshghosh.synccity
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
+import androidx.activity.ComponentActivity
 import androidx.core.content.ContextCompat
-import androidx.core.view.ViewCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import com.monotoshghosh.synccity.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : ComponentActivity() {
     private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding=ActivityMainBinding.inflate(layoutInflater)
-//        enableEdgeToEdge()
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        window.apply {
-            statusBarColor = ContextCompat.getColor(this@MainActivity,android.R.color.white)
-            decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
-        }
+        // Set the status bar to transparent
+        window.statusBarColor = Color.TRANSPARENT
+
+        // Make status bar icons and text dark
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_STABLE or
+                View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN or
+                View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
 
         hideNavigationBar()
 
-//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-//            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-//            insets
-//        }
-
         // REGISTRATION BTN
         binding.registerBtn.setOnClickListener {
-            intent = Intent(this,RegistrationScreen::class.java)
+            val intent = Intent(this, RegistrationScreen::class.java)
             startActivity(intent)
         }
 
         // LOGIN BTN
         binding.loginBtn.setOnClickListener {
-            intent = Intent(this,LoginScreen::class.java)
+            val intent = Intent(this, LoginScreen::class.java)
             startActivity(intent)
         }
 
         // COMPLAINT BOX BTN
         binding.complainBoxBtn.setOnClickListener {
-            intent = Intent(this,ComplaintBoxScreen::class.java)
+            val intent = Intent(this, ComplaintBoxScreen::class.java)
             startActivity(intent)
         }
-
-
-
-
-
     }
-
-
-
-
-
 
     private fun hideNavigationBar() {
         WindowCompat.setDecorFitsSystemWindows(window, false)
