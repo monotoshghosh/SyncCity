@@ -3,6 +3,7 @@ package com.monotoshghosh.synccity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -51,6 +52,14 @@ class SpecificDeptScreen : AppCompatActivity() {
         binding.requestDepartment.setOnClickListener {
             intent = Intent(this,Requests::class.java)
             startActivity(intent)
+        }
+
+        binding.logoutDepartment.setOnClickListener {
+            Toast.makeText(this, "Logout Successful", Toast.LENGTH_SHORT).show()
+            intent = Intent(this,MainActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK // TO CLEAR THE STACK
+            startActivity(intent)
+            finish()
         }
 
 
