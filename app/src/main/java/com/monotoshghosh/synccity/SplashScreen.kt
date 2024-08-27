@@ -2,11 +2,13 @@ package com.monotoshghosh.synccity
 
 import android.content.Intent
 import android.graphics.Color
+import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
 import android.view.animation.AnimationUtils
 import android.widget.TextView
+import android.widget.VideoView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -37,21 +39,34 @@ class SplashScreen : AppCompatActivity() {
 
         hideNavigationBar()
 
-//        val backBtnGif= binding.animationVideo
-//        Glide.with(this).asGif().load(R.drawable.aniv1).into(backBtnGif)
+        // Set up the VideoView
+        val videoView: VideoView = binding.videoView
+        val videoPath = "android.resource://" + packageName + "/" + R.raw.splashscrvideo
+        val uri = Uri.parse(videoPath)
+        videoView.setVideoURI(uri)
 
-        // Load and apply the animation to the TextView
-        val teamRbtTextView = binding.root.findViewById<TextView>(R.id.textViewSplashScr)
-        val animation = AnimationUtils.loadAnimation(this, R.anim.fade_in_scale)
-        teamRbtTextView.startAnimation(animation)
+        // Start playing the video
+        videoView.start()
+
+        // Transition to the main activity after the video finishes (3 seconds)
+        videoView.setOnCompletionListener {
+            intent=Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
+
+
+//        // Load and apply the animation to the TextView
+//        val teamRbtTextView = binding.root.findViewById<TextView>(R.id.textViewSplashScr)
+//        val animation = AnimationUtils.loadAnimation(this, R.anim.fade_in_scale)
+//        teamRbtTextView.startAnimation(animation)
 
 
         // SPLASH SCREEN
-        Handler().postDelayed({
-            intent = Intent(this,MainActivity::class.java   )
-            startActivity(intent)
-            finish()
-        },2000)
+//        Handler().postDelayed({
+//            intent = Intent(this,MainActivity::class.java   )
+//            startActivity(intent)
+//            finish()
+//        },2000)
     }
 
     private fun hideNavigationBar() {
