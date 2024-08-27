@@ -1,0 +1,43 @@
+{
+  "states": [
+    {
+      "name": "West Bengal",
+      "districts": [
+        {
+          "name": "Kolkata",
+          "cities": ["Shyambazar", "Garia", "Salt Lake"]
+        },
+        {
+          "name": "Howrah",
+          "cities": ["Howrah", "Bally", "Shibpur"]
+        }
+      ]
+    },
+    {
+      "name": "Maharashtra",
+      "districts": [
+        {
+          "name": "Mumbai",
+          "cities": ["Andheri", "Bandra", "Colaba"]
+        },
+        {
+          "name": "Pune",
+          "cities": ["Pimpri", "Shivaji Nagar", "Hinjewadi"]
+        }
+      ]
+    },
+    {
+      "name": "Karnataka",
+      "districts": [
+        {
+          "name": "Bangalore",
+          "cities": ["Indiranagar", "Whitefield", "Koramangala"]
+        },
+        {
+          "name": "Mysore",
+          "cities": ["Gokulam", "Nanjangud", "VV Mohalla"]
+        }
+      ]
+    }
+  ]
+}
