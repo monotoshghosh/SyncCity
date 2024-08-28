@@ -6,9 +6,14 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.google.gson.reflect.TypeToken
 import com.monotoshghosh.synccity.databinding.ActivityContactOtherDeptBinding
-import com.monotoshghosh.synccity.databinding.ActivityRequestApprovalBinding
+
+
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
+import com.google.gson.Gson
+import java.io.InputStreamReader
 
 class ContactOtherDept : AppCompatActivity() {
     private lateinit var binding: ActivityContactOtherDeptBinding
@@ -31,4 +36,5 @@ class ContactOtherDept : AppCompatActivity() {
 
 
     }
+
 }
