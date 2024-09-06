@@ -1,11 +1,11 @@
 package com.monotoshghosh.synccity
 
+import com.bumptech.glide.Glide
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import androidx.activity.ComponentActivity
-import androidx.core.content.ContextCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
@@ -18,6 +18,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val aiBot= binding.aiBot
+        Glide.with(this).asGif().load(R.drawable.chatbot).into(aiBot)
 
         // Set the status bar to transparent
         window.statusBarColor = Color.TRANSPARENT
@@ -42,10 +45,10 @@ class MainActivity : ComponentActivity() {
         }
 
         // COMPLAINT BOX BTN
-        binding.complainBoxBtn.setOnClickListener {
-            val intent = Intent(this, ComplaintBoxScreen::class.java)
-            startActivity(intent)
-        }
+//        binding.complainBoxBtn.setOnClickListener {
+//            val intent = Intent(this, ComplaintBoxScreen::class.java)
+//            startActivity(intent)
+//        }
     }
 
     private fun hideNavigationBar() {
