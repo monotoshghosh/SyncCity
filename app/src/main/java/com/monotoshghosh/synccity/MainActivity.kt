@@ -19,8 +19,8 @@ class MainActivity : ComponentActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val aiBot= binding.aiBot
-        Glide.with(this).asGif().load(R.drawable.chatbot).into(aiBot)
+//        val aiBot= binding.aiBot
+//        Glide.with(this).asGif().load(R.drawable.chatbot).into(aiBot)
 
         // Set the status bar to transparent
         window.statusBarColor = Color.TRANSPARENT
@@ -44,11 +44,11 @@ class MainActivity : ComponentActivity() {
             startActivity(intent)
         }
 
-        // COMPLAINT BOX BTN
-//        binding.complainBoxBtn.setOnClickListener {
-//            val intent = Intent(this, ComplaintBoxScreen::class.java)
-//            startActivity(intent)
-//        }
+//         COMPLAINT BOX BTN
+        binding.complainBoxBtn.setOnClickListener {
+            val intent = Intent(this, ComplaintBoxScreen::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun hideNavigationBar() {

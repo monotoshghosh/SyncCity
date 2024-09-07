@@ -52,6 +52,7 @@ class SplashScreen : AppCompatActivity() {
         videoView.setOnCompletionListener {
             intent=Intent(this,MainActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
 
