@@ -53,7 +53,7 @@ class RegistrationScreen : AppCompatActivity() {
             val password = binding.passwordReg.editableText.toString()
 
             val specDept = Registration(department, town, block, district, pinCode, state, phoneNo, emailId, password)
-            database = FirebaseDatabase.getInstance().getReference("RootNode(App-SyncCity)")
+            database = FirebaseDatabase.getInstance().getReference("RootNode(App-SyncCity)/Departments")
 
 
             val childNode = "$department - $block"

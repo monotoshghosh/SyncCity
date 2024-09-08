@@ -8,10 +8,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.monotoshghosh.synccity.databinding.ActivityLoginScreenBinding
 
 class LoginScreen : AppCompatActivity() {
     private lateinit var binding: ActivityLoginScreenBinding
+    lateinit var database: DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginScreenBinding.inflate(layoutInflater)
@@ -30,6 +33,10 @@ class LoginScreen : AppCompatActivity() {
 //        }
 
         binding.loginBtnLoginScreen.setOnClickListener {
+
+            database = FirebaseDatabase.getInstance().getReference("RootNode(App-SyncCity)")
+
+
             intent = Intent(this,SpecificDeptScreen::class.java)
             startActivity(intent)
         }
@@ -38,3 +45,5 @@ class LoginScreen : AppCompatActivity() {
 
     }
 }
+
+
