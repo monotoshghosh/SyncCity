@@ -32,6 +32,8 @@ class MainActivity : ComponentActivity() {
 
         hideNavigationBar()
 
+        checkIfLoggedin()  // CHECK IF DEPARTMENT CURRENTLY LOGGED IN
+
         // REGISTRATION BTN
         binding.registerBtn.setOnClickListener {
             val intent = Intent(this, RegistrationScreen::class.java)
@@ -57,4 +59,17 @@ class MainActivity : ComponentActivity() {
         controller.hide(WindowInsetsCompat.Type.navigationBars())
         controller.systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
     }
+
+    private fun checkIfLoggedin() {
+        val sharedPreferences = getSharedPreferences("SyncCityPrefs", MODE_PRIVATE)
+        val isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false)
+
+        if (isLoggedIn) {
+            val intent = Intent(this, SpecificDeptScreen::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(intent)
+            finish()
+        }
+    }
+
 }

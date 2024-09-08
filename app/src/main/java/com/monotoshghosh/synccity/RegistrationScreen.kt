@@ -52,6 +52,11 @@ class RegistrationScreen : AppCompatActivity() {
             val emailId = binding.emailIDReg.text.toString()
             val password = binding.passwordReg.editableText.toString()
 
+            if(department.isEmpty() || town.isEmpty() || block.isEmpty() || district.isEmpty() || pinCode.isEmpty() || state.isEmpty() || phoneNo.isEmpty() || emailId.isEmpty() || password.isEmpty()){
+                Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
             val specDept = Registration(department, town, block, district, pinCode, state, phoneNo, emailId, password)
             database = FirebaseDatabase.getInstance().getReference("RootNode(App-SyncCity)/Departments")
 
@@ -67,6 +72,8 @@ class RegistrationScreen : AppCompatActivity() {
                         // Child node does not exist, proceed with registration
                         database.child(childNode).setValue(specDept).addOnSuccessListener {
                             Toast.makeText(this@RegistrationScreen, "Registration Success", Toast.LENGTH_SHORT).show()
+                            startActivity(Intent(applicationContext,LoginScreen::class.java))
+                            finish()
                             binding.deptReg.text?.clear()
                             binding.villTownReg.text?.clear()
                             binding.blockReg.text?.clear()

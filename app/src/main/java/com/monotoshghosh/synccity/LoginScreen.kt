@@ -47,7 +47,6 @@ class LoginScreen : AppCompatActivity() {
 //        }
 
 
-        checkIfLoggedin()  // CHECK IF DEPARTMENT CURRENTLY LOGGED IN
 
         binding.loginBtnLoginScreen.setOnClickListener {
             val department = binding.deptLogin.text.toString().trim()
@@ -95,6 +94,7 @@ class LoginScreen : AppCompatActivity() {
 
                         // Proceed to the next screen
                         val intent = Intent(this@LoginScreen, SpecificDeptScreen::class.java)
+                        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                         startActivity(intent)
                         finish()
                     } else {
@@ -115,16 +115,7 @@ class LoginScreen : AppCompatActivity() {
 
     }
 
-    private fun checkIfLoggedin(){
-        val sharedPreferences = getSharedPreferences("SyncCityPrefs", MODE_PRIVATE)
-        val isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false)
 
-        if (isLoggedIn) {
-            val intent = Intent(this, SpecificDeptScreen::class.java)
-            startActivity(intent)
-            finish()
-        }
-    }
 
 
     private fun storeLoginInfo(){
