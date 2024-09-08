@@ -3,13 +3,18 @@ package com.monotoshghosh.synccity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
+import android.widget.Toast.*
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 import com.monotoshghosh.synccity.databinding.ActivityLoginScreenBinding
 
 class LoginScreen : AppCompatActivity() {
@@ -32,14 +37,62 @@ class LoginScreen : AppCompatActivity() {
 //            insets
 //        }
 
+//        binding.loginBtnLoginScreen.setOnClickListener {
+//
+//            database = FirebaseDatabase.getInstance().getReference("RootNode(App-SyncCity)")
+//
+//
+//            intent = Intent(this,SpecificDeptScreen::class.java)
+//            startActivity(intent)
+//        }
+
         binding.loginBtnLoginScreen.setOnClickListener {
+            val department = binding.deptLogin.text.toString().trim()
+            val block = binding.blockLogin.text.toString().trim()
+            val email = binding.emailIDLogin.text.toString().trim()
+            val password = binding.passwordLogin.text.toString().trim()
 
-            database = FirebaseDatabase.getInstance().getReference("RootNode(App-SyncCity)")
+            if (department.isEmpty() || block.isEmpty() || email.isEmpty() || password.isEmpty()) {
+                Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
 
+            database = FirebaseDatabase.getInstance().getReference("RootNode(App-SyncCity)/Departments")
 
-            intent = Intent(this,SpecificDeptScreen::class.java)
-            startActivity(intent)
+            // Query Firebase to find a matching record
+            database.addListenerForSingleValueEvent(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    var found = false
+
+                    for (departmentSnapshot in snapshot.children) {
+                        val dept = departmentSnapshot.child("department").getValue(String::class.java)
+                        val blk = departmentSnapshot.child("block").getValue(String::class.java)
+                        val emailStored = departmentSnapshot.child("emailID").getValue(String::class.java)
+                        val pass = departmentSnapshot.child("password").getValue(String::class.java)
+
+                        if (dept == department && blk == block && emailStored == email && pass == password) {
+                            found = true
+                            break
+                        }
+                    }
+
+                    if (found) {
+                        Toast.makeText(this@LoginScreen, "Login Successful", Toast.LENGTH_SHORT).show()
+                        // Proceed to the next screen
+                        val intent = Intent(this@LoginScreen, SpecificDeptScreen::class.java)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        Toast.makeText(this@LoginScreen, "Invalid credentials", Toast.LENGTH_SHORT).show()
+                    }
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                    Toast.makeText(this@LoginScreen, "Database Error: ${error.message}", Toast.LENGTH_SHORT).show()
+                }
+            })
         }
+
 
 
 
