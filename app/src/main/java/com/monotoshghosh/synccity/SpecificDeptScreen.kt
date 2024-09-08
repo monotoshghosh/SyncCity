@@ -55,7 +55,11 @@ class SpecificDeptScreen : AppCompatActivity() {
         }
 
         binding.logoutDepartment.setOnClickListener {
+
+            logoutFun() // FOR LOGOUT
+
             Toast.makeText(this, "Logout Successful", Toast.LENGTH_SHORT).show()
+
             intent = Intent(this,MainActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK // TO CLEAR THE STACK
             startActivity(intent)
@@ -68,6 +72,15 @@ class SpecificDeptScreen : AppCompatActivity() {
 
 
 
+
+    }
+
+    private fun logoutFun(){
+        // Clear user data and redirect to login screen
+        val sharedPreferences = getSharedPreferences("SyncCityPrefs", MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        editor.clear() // Remove all stored data
+        editor.apply()
 
     }
 }

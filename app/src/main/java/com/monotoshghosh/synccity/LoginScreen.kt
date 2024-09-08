@@ -46,6 +46,9 @@ class LoginScreen : AppCompatActivity() {
 //            startActivity(intent)
 //        }
 
+
+        checkIfLoggedin()  // CHECK IF DEPARTMENT CURRENTLY LOGGED IN
+
         binding.loginBtnLoginScreen.setOnClickListener {
             val department = binding.deptLogin.text.toString().trim()
             val block = binding.blockLogin.text.toString().trim()
@@ -78,6 +81,18 @@ class LoginScreen : AppCompatActivity() {
 
                     if (found) {
                         Toast.makeText(this@LoginScreen, "Login Successful", Toast.LENGTH_SHORT).show()
+
+                        // STORING INFO FOR LOGIN
+                        val sharedPreferences = getSharedPreferences("SyncCityPrefs", MODE_PRIVATE)
+                        val editor = sharedPreferences.edit()
+                        editor.putBoolean("isLoggedIn", true)
+                        editor.putString("email", email)
+                        editor.putString("department", department)
+                        editor.putString("block", block)
+                        editor.putString("password", password)
+                        editor.apply()
+
+
                         // Proceed to the next screen
                         val intent = Intent(this@LoginScreen, SpecificDeptScreen::class.java)
                         startActivity(intent)
@@ -96,7 +111,26 @@ class LoginScreen : AppCompatActivity() {
 
 
 
+
+
     }
+
+    private fun checkIfLoggedin(){
+        val sharedPreferences = getSharedPreferences("SyncCityPrefs", MODE_PRIVATE)
+        val isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false)
+
+        if (isLoggedIn) {
+            val intent = Intent(this, SpecificDeptScreen::class.java)
+            startActivity(intent)
+            finish()
+        }
+    }
+
+
+    private fun storeLoginInfo(){
+
+    }
+
 }
 
 
