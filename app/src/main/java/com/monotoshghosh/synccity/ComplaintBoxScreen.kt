@@ -37,12 +37,13 @@ class ComplaintBoxScreen : AppCompatActivity() {
         binding.submitBtnCompBox.setOnClickListener {
 
             val name = binding.nameCompBox.text.toString()
+            val phoneNo = binding.phoneNoCompBox.text.toString()
             val compDesc = binding.compComplaintBox.text.toString()
             val dept1 = binding.dept1CompBox.text.toString()
             val dept2 = binding.dept1CompBox.text.toString()
             val dept3 = binding.dept3CompBox.text.toString()
 
-            if(name.isEmpty() || compDesc.isEmpty() || dept1.isEmpty()){
+            if(name.isEmpty() || phoneNo.isEmpty() || compDesc.isEmpty() || dept1.isEmpty()){
                 Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
