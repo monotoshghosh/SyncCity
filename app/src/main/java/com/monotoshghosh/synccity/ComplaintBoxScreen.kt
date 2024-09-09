@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.firebase.database.FirebaseDatabase
 import com.monotoshghosh.synccity.databinding.ActivityComplaintBoxScreenBinding
 import com.monotoshghosh.synccity.databinding.ActivityLoginScreenBinding
 
@@ -31,6 +32,21 @@ class ComplaintBoxScreen : AppCompatActivity() {
 //        }
 
         binding.submitBtnCompBox.setOnClickListener {
+
+            val name = binding.nameCompBox.text.toString()
+            val compDesc = binding.compComplaintBox.text.toString()
+            val dept1 = binding.dept1CompBox.text.toString()
+            val dept2 = binding.dept1CompBox.text.toString()
+            val dept3 = binding.dept3CompBox.text.toString()
+
+            if(name.isEmpty() || compDesc.isEmpty() || dept1.isEmpty()){
+                Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            val specDept = ComplainBox(name, compDesc, dept1, dept2, dept3)
+//            database = FirebaseDatabase.getInstance().getReference("RootNode(App-SyncCity)/Departments")
+
             Toast.makeText(this, "Complaint Successfully Submitted", Toast.LENGTH_SHORT).show()
             finish()
         }
