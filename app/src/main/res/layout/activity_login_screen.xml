@@ -42,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="70dp"
                 android:textColorHint="#757171"
                 app:boxCornerRadiusBottomEnd="10dp"
                 app:boxCornerRadiusBottomStart="10dp"
@@ -94,89 +94,89 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:textColorHint="#757171"
-                app:boxCornerRadiusBottomEnd="10dp"
-                app:boxCornerRadiusBottomStart="10dp"
-                app:boxCornerRadiusTopEnd="10dp"
-                app:boxCornerRadiusTopStart="10dp"
-                app:boxStrokeColor="#5171C3"
-                app:hintEnabled="false"
-                app:hintTextColor="#024E80">
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:textColorHint="#757171"-->
+<!--                app:boxCornerRadiusBottomEnd="10dp"-->
+<!--                app:boxCornerRadiusBottomStart="10dp"-->
+<!--                app:boxCornerRadiusTopEnd="10dp"-->
+<!--                app:boxCornerRadiusTopStart="10dp"-->
+<!--                app:boxStrokeColor="#5171C3"-->
+<!--                app:hintEnabled="false"-->
+<!--                app:hintTextColor="#024E80">-->
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/distLogin"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:drawablePadding="10dp"
-                    android:hint="District"
-                    android:inputType="text"
-                    android:singleLine="true"
-                    android:textColor="@color/black"
-                    android:textColorHighlight="#B2D8E4"
-                    android:textColorHint="#A8A7A9" />
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/distLogin"-->
+<!--                    android:layout_width="300dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:drawablePadding="10dp"-->
+<!--                    android:hint="District"-->
+<!--                    android:inputType="text"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textColorHighlight="#B2D8E4"-->
+<!--                    android:textColorHint="#A8A7A9" />-->
 
-            </com.google.android.material.textfield.TextInputLayout>
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:textColorHint="#757171"
-                app:boxCornerRadiusBottomEnd="10dp"
-                app:boxCornerRadiusBottomStart="10dp"
-                app:boxCornerRadiusTopEnd="10dp"
-                app:boxCornerRadiusTopStart="10dp"
-                app:boxStrokeColor="#5171C3"
-                app:hintEnabled="false"
-                app:hintTextColor="#024E80">
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:textColorHint="#757171"-->
+<!--                app:boxCornerRadiusBottomEnd="10dp"-->
+<!--                app:boxCornerRadiusBottomStart="10dp"-->
+<!--                app:boxCornerRadiusTopEnd="10dp"-->
+<!--                app:boxCornerRadiusTopStart="10dp"-->
+<!--                app:boxStrokeColor="#5171C3"-->
+<!--                app:hintEnabled="false"-->
+<!--                app:hintTextColor="#024E80">-->
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/stateLogin"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:drawablePadding="10dp"
-                    android:hint="State"
-                    android:inputType="text"
-                    android:singleLine="true"
-                    android:textColor="@color/black"
-                    android:textColorHighlight="#B2D8E4"
-                    android:textColorHint="#A8A7A9" />
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/stateLogin"-->
+<!--                    android:layout_width="300dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:drawablePadding="10dp"-->
+<!--                    android:hint="State"-->
+<!--                    android:inputType="text"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textColorHighlight="#B2D8E4"-->
+<!--                    android:textColorHint="#A8A7A9" />-->
 
-            </com.google.android.material.textfield.TextInputLayout>
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:textColorHint="#757171"
-                app:boxCornerRadiusBottomEnd="10dp"
-                app:boxCornerRadiusBottomStart="10dp"
-                app:boxCornerRadiusTopEnd="10dp"
-                app:boxCornerRadiusTopStart="10dp"
-                app:boxStrokeColor="#5171C3"
-                app:hintEnabled="false"
-                app:hintTextColor="#024E80">
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:textColorHint="#757171"-->
+<!--                app:boxCornerRadiusBottomEnd="10dp"-->
+<!--                app:boxCornerRadiusBottomStart="10dp"-->
+<!--                app:boxCornerRadiusTopEnd="10dp"-->
+<!--                app:boxCornerRadiusTopStart="10dp"-->
+<!--                app:boxStrokeColor="#5171C3"-->
+<!--                app:hintEnabled="false"-->
+<!--                app:hintTextColor="#024E80">-->
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/phoneNoLogin"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:drawablePadding="10dp"
-                    android:hint="Phone No"
-                    android:inputType="number"
-                    android:singleLine="true"
-                    android:textColor="@color/black"
-                    android:textColorHighlight="#B2D8E4"
-                    android:textColorHint="#A8A7A9" />
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/phoneNoLogin"-->
+<!--                    android:layout_width="300dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:drawablePadding="10dp"-->
+<!--                    android:hint="Phone No"-->
+<!--                    android:inputType="number"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textColorHighlight="#B2D8E4"-->
+<!--                    android:textColorHint="#A8A7A9" />-->
 
-            </com.google.android.material.textfield.TextInputLayout>
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="wrap_content"
@@ -242,7 +242,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="75dp"
                 android:layout_gravity="center_horizontal"
                 android:backgroundTint="@color/white"
                 app:cardElevation="10dp"
