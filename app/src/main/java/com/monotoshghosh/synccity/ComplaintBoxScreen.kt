@@ -8,12 +8,15 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.monotoshghosh.synccity.databinding.ActivityComplaintBoxScreenBinding
 import com.monotoshghosh.synccity.databinding.ActivityLoginScreenBinding
 
 class ComplaintBoxScreen : AppCompatActivity() {
     private lateinit var binding: ActivityComplaintBoxScreenBinding
+    lateinit var database: DatabaseReference
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityComplaintBoxScreenBinding.inflate(layoutInflater)
@@ -44,8 +47,9 @@ class ComplaintBoxScreen : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            val specDept = ComplainBox(name, compDesc, dept1, dept2, dept3)
-//            database = FirebaseDatabase.getInstance().getReference("RootNode(App-SyncCity)/Departments")
+            val complainNode = ComplainBox(name, compDesc, dept1, dept2, dept3)
+
+            database = FirebaseDatabase.getInstance().getReference("RootNode(App-SyncCity)/Complaints")
 
             Toast.makeText(this, "Complaint Successfully Submitted", Toast.LENGTH_SHORT).show()
             finish()
