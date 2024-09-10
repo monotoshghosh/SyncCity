@@ -84,7 +84,7 @@
             android:layout_height="wrap_content"
             android:drawablePadding="10dp"
             android:hint="Enter Your Phone No"
-            android:inputType="text"
+            android:inputType="number"
             android:singleLine="true"
             android:textColor="@color/black"
             android:textColorHighlight="#B2D8E4"

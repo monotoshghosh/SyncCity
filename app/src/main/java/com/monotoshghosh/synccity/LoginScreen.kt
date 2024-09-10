@@ -81,6 +81,7 @@ class LoginScreen : AppCompatActivity() {
                     if (found) {
                         Toast.makeText(this@LoginScreen, "Login Successful", Toast.LENGTH_SHORT).show()
 
+
                         // STORING INFO FOR LOGIN
                         val sharedPreferences = getSharedPreferences("SyncCityPrefs", MODE_PRIVATE)
                         val editor = sharedPreferences.edit()

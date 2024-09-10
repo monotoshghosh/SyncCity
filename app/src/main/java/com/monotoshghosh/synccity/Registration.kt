@@ -1,4 +1,4 @@
 package com.monotoshghosh.synccity
 
-class Registration(val Department:String, val Town:String, val Block:String, val District:String, val PinCode:String, val State:String, val PhoneNo:String, val EmailID:String, val Password:String) {
+class Registration(val department:String, val town:String, val block:String, val district:String, val pinCode:String, val state:String, val phoneNo:String, val emailID:String, val password:String) {
 }
